@@ -76,9 +76,16 @@ public class Main {
 		//4. Create a variable of type of long, and make it equal to
 		//   50000 + 10 times the sum of the byte, plus the short plus the int.
 		//Long myLongValue = (Long) (50_000 + 10 * (theTotal));
-		Long myLongTotal = 50_000L + 10L * (myByteValue + myShortValue + myIntValue);
+		long myLongTotal = 50_000L + 10L * (myByteValue + myShortValue + myIntValue);
+		// add L in Long data type; Long do not need use casting, because Long has the greater width than int.
+		short myShortTotal = (short) (1000 + 10 * (myByteValue + myShortValue + myIntValue));
+		// short and byte data types need to cast.
 
-		System.out.println("myLongTotal =" + myLongTotal);
+
+
+		System.out.println("myLongTotal = " + myLongTotal);
+		System.out.println("myShortTotal = " + myShortTotal);
 
 	}
 }
+
