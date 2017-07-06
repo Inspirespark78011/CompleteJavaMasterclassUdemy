@@ -58,6 +58,8 @@ public class Main {
     }
 }
 
+//Result:
+
 package com.ShenLi;
 
 
@@ -74,11 +76,9 @@ public class Main {
 		//4. Create a variable of type of long, and make it equal to
 		//   50000 + 10 times the sum of the byte, plus the short plus the int.
 		//Long myLongValue = (Long) (50_000 + 10 * (theTotal));
-		Long myLongValue = 50_000L + 10L * (myByteValue + myShortValue + myIntValue);
-		//add L in the value of data type of Long
+		Long myLongTotal = 50_000L + 10L * (myByteValue + myShortValue + myIntValue);
 
-		System.out.println(myLongValue);
+		System.out.println("myLongTotal =" + myLongTotal);
 
 	}
 }
-
