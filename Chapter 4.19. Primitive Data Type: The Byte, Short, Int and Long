@@ -1,0 +1,35 @@
+// Part 1
+package com.ShenLi;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+    // int has a width of 32.
+    int myMinValue = -2_147_483_648;
+	int myMaxValue = 2_147_483_647;
+	int myTotal = (myMaxValue/2);
+	System.out.println("myTotal =" + myTotal );
+
+    // bit has a width of 16.
+	byte myMinByteValue = -128;
+	byte myMaxByteValue = 127;
+	byte MinNewMinByteValue = (byte)(myMinByteValue/2); // Use Casting, add data type of byte in front of (MyMinByteValye/2)
+	System.out.println("NewMinByteValve =" + MinNewMinByteValue );
+
+    // short has a width of 8.
+	short myMinShortValue = -32_768;
+	short myMaxShortValue = 32_767;
+  
+  // long has a width of 64.
+	long myMinLonngValue = -9_223_372_036_854_775_88L;
+	long myMaxLongValue = 9_223_372_036_854_775_87L;
+
+  // using casting, when the data type, such as, byte, short, long is divided by 2. Because Java automatically treate these number types as int, unless you use casting.
+  
+
+
+    }
+}
+
+//Part 2
