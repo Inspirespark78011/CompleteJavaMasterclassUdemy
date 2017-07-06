@@ -32,4 +32,53 @@ public class Main {
     }
 }
 
-//Part 2
+//Part 2 Challenge:
+package com.ShenLi;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+		//1. Create a byte variable and set it to any valid byte number.
+		byte myByteValue = 127;
+		//2. Create a short variable and set it to any valid short number.
+		short myShortValue = 2436;
+		//3. Create a int variable and set it to any valid int number.
+		int myIntValue = 2437;
+		int theTotal = myByteValue + myShortValue + myIntValue;
+
+		System.out.println(theTotal);
+		//4. Create a variable of type of long, and make it equal to
+		//   50000 + 10 times the sum of the byte, plus the short plus the int.
+		//Long myLongValue = (Long) (50_000 + 10 * (theTotal));
+		Long myLongValue = 100_000L;
+
+		System.out.println(myLongValue);
+
+    }
+}
+
+package com.ShenLi;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+		//1. Create a byte variable and set it to any valid byte number.
+		byte myByteValue = 10;
+		//2. Create a short variable and set it to any valid short number.
+		short myShortValue = 20;
+		//3. Create a int variable and set it to any valid int number.
+		int myIntValue = 1000;
+
+		//4. Create a variable of type of long, and make it equal to
+		//   50000 + 10 times the sum of the byte, plus the short plus the int.
+		//Long myLongValue = (Long) (50_000 + 10 * (theTotal));
+		Long myLongValue = 50_000L + 10L * (myByteValue + myShortValue + myIntValue);
+		//add L in the value of data type of Long
+
+		System.out.println(myLongValue);
+
+	}
+}
+
